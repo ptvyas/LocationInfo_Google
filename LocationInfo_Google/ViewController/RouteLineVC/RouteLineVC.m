@@ -407,7 +407,7 @@ enum enumAddress {
 - (void) webService_GetGoogleAddress_LatLog:(CLLocationCoordinate2D)locationCoordinate2D
 {
     NSString *strlatLog = [NSString stringWithFormat:@"%@,%@",@(locationCoordinate2D.latitude).stringValue, @(locationCoordinate2D.longitude).stringValue];
-    NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyBta5jqM-1C9iMoDYgtuSFdmYkz-kbdd8M"]; //Live
+    NSString *strKey = [NSString stringWithFormat:@"%@",GoogleAPI_Key]; //Live
     NSString *signUpRequest = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%@&key=%@",strlatLog,strKey];
     NSLog(@"signUpRequest:\n%@",signUpRequest);
     
@@ -496,8 +496,7 @@ enum enumAddress {
         strDestination = [NSString stringWithFormat:@"%f,%f",latitude_Destination,longitude_Destination];
         
         NSString *strMode = [NSString stringWithFormat:@"%@",@"driving+walking "];
-        //NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyCxb-3NivGE0YzosX8IzXR5YBsN_vuicuA"]; //Test
-        NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyDMXbtQzkWvrxbggHRelZQqw3veLY49U18"]; //Live
+        NSString *strKey = [NSString stringWithFormat:@"%@",GoogleAPI_Key]; //Live
         
         NSString *signUpRequest = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=%@&destination=%@&mode=%@&key=%@",strOrigin,strDestination,strMode,strKey];
         NSLog(@"signUpRequest: %@",signUpRequest);
