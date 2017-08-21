@@ -1,3 +1,4 @@
+//->3(key)
 //
 //  Constant.h
 //
@@ -9,10 +10,9 @@
 
 #define AppName                                             [NSString stringWithFormat:@"LOCATION\n(Google)"]
 
-//Using this Key for Google ID :
-//UserID : test.wos.ios@gmail.com
-//PWD: wos@2017
-#define GoogleAPI_Key                                       @"AIzaSyC0AmqOUrShkfUohzjpd2ih0Gj5VsWRpEc" // Project: "My Project"
+
+#define GoogleAPI_Key                                       @"AIzaSyC0AmqOUrShkfUohzjpd2ih0Gj5VsWRpEcApC" // Project: "My Project"
+//#define GoogleAPI_Key                                       @"AIzaSyDMXbtQzkWvrxbggHRelZQqw3veLY49U18AQc"
 /*
 #define GoogleAutoCompletWS(GoogleAPI_Key, strValue)        [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/autocomplete/json?key=%@&input=%@",GoogleAPI_Key,strValue]
 #define _keyPlaceID                                         @"_KeyPlaceID"
