@@ -13,19 +13,48 @@
 		044D3DD41F3487250055E1BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044D3DD21F3487250055E1BE /* Main.storyboard */; };
 		044D3DD61F3487250055E1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044D3DD51F3487250055E1BE /* Assets.xcassets */; };
 		044D3DD91F3487250055E1BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044D3DD71F3487250055E1BE /* LaunchScreen.storyboard */; };
+		04561D641F48257D0089064A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 04561D631F48257D0089064A /* Reachability.m */; };
+		04561D671F4825850089064A /* WSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04561D661F4825850089064A /* WSModel.m */; };
+		04561D6B1F482EB10089064A /* CustomeMarkersInfoWindowsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04561D6A1F482EB10089064A /* CustomeMarkersInfoWindowsVC.m */; };
+		045BAA361F39DF360018F091 /* RouteLineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BAA351F39DF360018F091 /* RouteLineVC.m */; };
+		046A7C4D1F35C86C00DE1C1B /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A7C4C1F35C86C00DE1C1B /* HomeVC.m */; };
+		046A7C521F35CB2A00DE1C1B /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A7C511F35CB2900DE1C1B /* Function.m */; };
+		046A7C5D1F35D3E900DE1C1B /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A7C5C1F35D3E900DE1C1B /* HomeCell.m */; };
+		046A7C611F35F15200DE1C1B /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A7C601F35F15200DE1C1B /* MapVC.m */; };
+		7FEF5AD722529585B8846586 /* libPods-LocationInfo_Google.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E63051570F70CC4A050C87FB /* libPods-LocationInfo_Google.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044D3DC61F3487250055E1BE /* LocationInfo_Google.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationInfo_Google.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D3DCA1F3487250055E1BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		044D3DCC1F3487250055E1BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		044D3DCD1F3487250055E1BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		044D3DCC1F3487250055E1BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LocationInfo_Google/AppDelegate/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		044D3DCD1F3487250055E1BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LocationInfo_Google/AppDelegate/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		044D3DCF1F3487250055E1BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		044D3DD01F3487250055E1BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		044D3DD31F3487250055E1BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044D3DD51F3487250055E1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044D3DD81F3487250055E1BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044D3DDA1F3487250055E1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04561D621F48257D0089064A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		04561D631F48257D0089064A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		04561D651F4825850089064A /* WSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSModel.h; sourceTree = "<group>"; };
+		04561D661F4825850089064A /* WSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSModel.m; sourceTree = "<group>"; };
+		04561D691F482EB10089064A /* CustomeMarkersInfoWindowsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeMarkersInfoWindowsVC.h; sourceTree = "<group>"; };
+		04561D6A1F482EB10089064A /* CustomeMarkersInfoWindowsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeMarkersInfoWindowsVC.m; sourceTree = "<group>"; };
+		045BAA341F39DF360018F091 /* RouteLineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteLineVC.h; sourceTree = "<group>"; };
+		045BAA351F39DF360018F091 /* RouteLineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteLineVC.m; sourceTree = "<group>"; };
+		046A7C4B1F35C86C00DE1C1B /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		046A7C4C1F35C86C00DE1C1B /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		046A7C501F35CB2900DE1C1B /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		046A7C511F35CB2900DE1C1B /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
+		046A7C591F35CCA500DE1C1B /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		046A7C5B1F35D3E900DE1C1B /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		046A7C5C1F35D3E900DE1C1B /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		046A7C5F1F35F15200DE1C1B /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		046A7C601F35F15200DE1C1B /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		273D2F866F576B01910336E8 /* Pods-LocationInfo_Google.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationInfo_Google.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocationInfo_Google/Pods-LocationInfo_Google.release.xcconfig"; sourceTree = "<group>"; };
+		B1969038D44F26B863BF8A41 /* Pods-LocationInfo_Google.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocationInfo_Google.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LocationInfo_Google/Pods-LocationInfo_Google.debug.xcconfig"; sourceTree = "<group>"; };
+		E63051570F70CC4A050C87FB /* libPods-LocationInfo_Google.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocationInfo_Google.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FEF5AD722529585B8846586 /* libPods-LocationInfo_Google.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +74,8 @@
 			children = (
 				044D3DC81F3487250055E1BE /* LocationInfo_Google */,
 				044D3DC71F3487250055E1BE /* Products */,
+				CB7D5319688B47C01CBE72BC /* Pods */,
+				E7B69D101E81DED1C3A12F9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +90,11 @@
 		044D3DC81F3487250055E1BE /* LocationInfo_Google */ = {
 			isa = PBXGroup;
 			children = (
-				044D3DCC1F3487250055E1BE /* AppDelegate.h */,
-				044D3DCD1F3487250055E1BE /* AppDelegate.m */,
-				044D3DCF1F3487250055E1BE /* ViewController.h */,
-				044D3DD01F3487250055E1BE /* ViewController.m */,
-				044D3DD21F3487250055E1BE /* Main.storyboard */,
+				046A7C531F35CB3600DE1C1B /* AppDelegate */,
+				046A7C571F35CBF200DE1C1B /* View */,
+				046A7C541F35CB6300DE1C1B /* ViewController */,
+				046A7C4E1F35CAFD00DE1C1B /* Model */,
 				044D3DD51F3487250055E1BE /* Assets.xcassets */,
-				044D3DD71F3487250055E1BE /* LaunchScreen.storyboard */,
 				044D3DDA1F3487250055E1BE /* Info.plist */,
 				044D3DC91F3487250055E1BE /* Supporting Files */,
 			);
@@ -79,6 +109,154 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04561D5A1F4824EE0089064A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				04561D621F48257D0089064A /* Reachability.h */,
+				04561D631F48257D0089064A /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		04561D5B1F4824FA0089064A /* WSModel */ = {
+			isa = PBXGroup;
+			children = (
+				04561D651F4825850089064A /* WSModel.h */,
+				04561D661F4825850089064A /* WSModel.m */,
+			);
+			path = WSModel;
+			sourceTree = "<group>";
+		};
+		04561D681F482E8C0089064A /* CustomeMarkersInfoWindowsVC */ = {
+			isa = PBXGroup;
+			children = (
+				04561D691F482EB10089064A /* CustomeMarkersInfoWindowsVC.h */,
+				04561D6A1F482EB10089064A /* CustomeMarkersInfoWindowsVC.m */,
+			);
+			path = CustomeMarkersInfoWindowsVC;
+			sourceTree = "<group>";
+		};
+		045BAA331F39DF0B0018F091 /* RouteLineVC */ = {
+			isa = PBXGroup;
+			children = (
+				045BAA341F39DF360018F091 /* RouteLineVC.h */,
+				045BAA351F39DF360018F091 /* RouteLineVC.m */,
+			);
+			path = RouteLineVC;
+			sourceTree = "<group>";
+		};
+		046A7C4E1F35CAFD00DE1C1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04561D5B1F4824FA0089064A /* WSModel */,
+				04561D5A1F4824EE0089064A /* Reachability */,
+				046A7C581F35CC9600DE1C1B /* Constants */,
+				046A7C4F1F35CB1200DE1C1B /* Function */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046A7C4F1F35CB1200DE1C1B /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				046A7C501F35CB2900DE1C1B /* Function.h */,
+				046A7C511F35CB2900DE1C1B /* Function.m */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		046A7C531F35CB3600DE1C1B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				044D3DCC1F3487250055E1BE /* AppDelegate.h */,
+				044D3DCD1F3487250055E1BE /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		046A7C541F35CB6300DE1C1B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04561D681F482E8C0089064A /* CustomeMarkersInfoWindowsVC */,
+				046A7C551F35CB7500DE1C1B /* HomeVC */,
+				046A7C561F35CB9000DE1C1B /* AutoCompletVC */,
+				046A7C5E1F35F11E00DE1C1B /* MapVC */,
+				045BAA331F39DF0B0018F091 /* RouteLineVC */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		046A7C551F35CB7500DE1C1B /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				046A7C5A1F35D3CC00DE1C1B /* Cell */,
+				046A7C4B1F35C86C00DE1C1B /* HomeVC.h */,
+				046A7C4C1F35C86C00DE1C1B /* HomeVC.m */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		046A7C561F35CB9000DE1C1B /* AutoCompletVC */ = {
+			isa = PBXGroup;
+			children = (
+				044D3DCF1F3487250055E1BE /* ViewController.h */,
+				044D3DD01F3487250055E1BE /* ViewController.m */,
+			);
+			path = AutoCompletVC;
+			sourceTree = "<group>";
+		};
+		046A7C571F35CBF200DE1C1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				044D3DD71F3487250055E1BE /* LaunchScreen.storyboard */,
+				044D3DD21F3487250055E1BE /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		046A7C581F35CC9600DE1C1B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				046A7C591F35CCA500DE1C1B /* Constant.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		046A7C5A1F35D3CC00DE1C1B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				046A7C5B1F35D3E900DE1C1B /* HomeCell.h */,
+				046A7C5C1F35D3E900DE1C1B /* HomeCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		046A7C5E1F35F11E00DE1C1B /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				046A7C5F1F35F15200DE1C1B /* MapVC.h */,
+				046A7C601F35F15200DE1C1B /* MapVC.m */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
+		CB7D5319688B47C01CBE72BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1969038D44F26B863BF8A41 /* Pods-LocationInfo_Google.debug.xcconfig */,
+				273D2F866F576B01910336E8 /* Pods-LocationInfo_Google.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7B69D101E81DED1C3A12F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63051570F70CC4A050C87FB /* libPods-LocationInfo_Google.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044D3DDD1F3487250055E1BE /* Build configuration list for PBXNativeTarget "LocationInfo_Google" */;
 			buildPhases = (
+				2905487C913E70EB20DDA7D4 /* [CP] Check Pods Manifest.lock */,
 				044D3DC21F3487250055E1BE /* Sources */,
 				044D3DC31F3487250055E1BE /* Frameworks */,
 				044D3DC41F3487250055E1BE /* Resources */,
+				7B0EBC3720B4008CA55AB0CE /* [CP] Embed Pods Frameworks */,
+				172869559B5A3282B413EC5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +291,7 @@
 				TargetAttributes = {
 					044D3DC51F3487250055E1BE = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 2V97KMX273;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,14 +327,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		172869559B5A3282B413EC5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LocationInfo_Google/Pods-LocationInfo_Google-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationInfo_Google/Pods-LocationInfo_Google-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2905487C913E70EB20DDA7D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocationInfo_Google-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B0EBC3720B4008CA55AB0CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LocationInfo_Google/Pods-LocationInfo_Google-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		044D3DC21F3487250055E1BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045BAA361F39DF360018F091 /* RouteLineVC.m in Sources */,
+				046A7C611F35F15200DE1C1B /* MapVC.m in Sources */,
+				04561D6B1F482EB10089064A /* CustomeMarkersInfoWindowsVC.m in Sources */,
+				046A7C5D1F35D3E900DE1C1B /* HomeCell.m in Sources */,
 				044D3DD11F3487250055E1BE /* ViewController.m in Sources */,
+				046A7C4D1F35C86C00DE1C1B /* HomeVC.m in Sources */,
+				04561D671F4825850089064A /* WSModel.m in Sources */,
 				044D3DCE1F3487250055E1BE /* AppDelegate.m in Sources */,
 				044D3DCB1F3487250055E1BE /* main.m in Sources */,
+				04561D641F48257D0089064A /* Reachability.m in Sources */,
+				046A7C521F35CB2A00DE1C1B /* Function.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,23 +513,37 @@
 		};
 		044D3DDE1F3487250055E1BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1969038D44F26B863BF8A41 /* Pods-LocationInfo_Google.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sanket Kyada (ENP482B5CQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2V97KMX273;
 				INFOPLIST_FILE = LocationInfo_Google/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vyas.LocationInfo-Google";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiteornagesoftware.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		044D3DDF1F3487250055E1BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273D2F866F576B01910336E8 /* Pods-LocationInfo_Google.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sanket Kyada (ENP482B5CQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2V97KMX273;
 				INFOPLIST_FILE = LocationInfo_Google/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vyas.LocationInfo-Google";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whiteornagesoftware.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -307,6 +566,7 @@
 				044D3DDF1F3487250055E1BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
