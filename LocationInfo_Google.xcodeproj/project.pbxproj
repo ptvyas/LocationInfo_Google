@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04130C2F1F4AF7F9000F626D /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04130C2D1F4AF7F9000F626D /* MapAnnotationView.m */; };
+		04130C301F4AF7F9000F626D /* MapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04130C2E1F4AF7F9000F626D /* MapAnnotationView.xib */; };
 		044D3DCB1F3487250055E1BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D3DCA1F3487250055E1BE /* main.m */; };
 		044D3DCE1F3487250055E1BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D3DCD1F3487250055E1BE /* AppDelegate.m */; };
 		044D3DD11F3487250055E1BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D3DD01F3487250055E1BE /* ViewController.m */; };
@@ -25,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04130C2C1F4AF7F9000F626D /* MapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationView.h; sourceTree = "<group>"; };
+		04130C2D1F4AF7F9000F626D /* MapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
+		04130C2E1F4AF7F9000F626D /* MapAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapAnnotationView.xib; sourceTree = "<group>"; };
 		044D3DC61F3487250055E1BE /* LocationInfo_Google.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationInfo_Google.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D3DCA1F3487250055E1BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		044D3DCC1F3487250055E1BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LocationInfo_Google/AppDelegate/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -132,6 +137,9 @@
 			children = (
 				04561D691F482EB10089064A /* CustomeMarkersInfoWindowsVC.h */,
 				04561D6A1F482EB10089064A /* CustomeMarkersInfoWindowsVC.m */,
+				04130C2C1F4AF7F9000F626D /* MapAnnotationView.h */,
+				04130C2D1F4AF7F9000F626D /* MapAnnotationView.m */,
+				04130C2E1F4AF7F9000F626D /* MapAnnotationView.xib */,
 			);
 			path = CustomeMarkersInfoWindowsVC;
 			sourceTree = "<group>";
@@ -177,11 +185,11 @@
 		046A7C541F35CB6300DE1C1B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				04561D681F482E8C0089064A /* CustomeMarkersInfoWindowsVC */,
 				046A7C551F35CB7500DE1C1B /* HomeVC */,
 				046A7C561F35CB9000DE1C1B /* AutoCompletVC */,
 				046A7C5E1F35F11E00DE1C1B /* MapVC */,
 				045BAA331F39DF0B0018F091 /* RouteLineVC */,
+				04561D681F482E8C0089064A /* CustomeMarkersInfoWindowsVC */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 			files = (
 				044D3DD91F3487250055E1BE /* LaunchScreen.storyboard in Resources */,
 				044D3DD61F3487250055E1BE /* Assets.xcassets in Resources */,
+				04130C301F4AF7F9000F626D /* MapAnnotationView.xib in Resources */,
 				044D3DD41F3487250055E1BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +406,7 @@
 				044D3DCE1F3487250055E1BE /* AppDelegate.m in Sources */,
 				044D3DCB1F3487250055E1BE /* main.m in Sources */,
 				04561D641F48257D0089064A /* Reachability.m in Sources */,
+				04130C2F1F4AF7F9000F626D /* MapAnnotationView.m in Sources */,
 				046A7C521F35CB2A00DE1C1B /* Function.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
