@@ -13,7 +13,6 @@
     
     __weak IBOutlet UIButton *btnReset;
     
-    
     __weak IBOutlet UIView *viewAddress;
     
     __weak IBOutlet UIView *ViewFrom;

@@ -32,6 +32,13 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="default_marker.png" translatesAutoresizingMaskIntoConstraints="NO" id="I0E-ge-S3w">
+                                <rect key="frame" x="168" y="232" width="40" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iGW-V5-Igq"/>
+                                    <constraint firstAttribute="width" constant="40" id="iWb-Ge-opH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -40,7 +47,9 @@
                             <constraint firstItem="NnX-ae-9kn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LKv-lM-9To"/>
                             <constraint firstItem="4U1-Eg-B1N" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="M1F-px-aVN"/>
                             <constraint firstItem="NnX-ae-9kn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Qw8-gl-iHc"/>
+                            <constraint firstItem="NnX-ae-9kn" firstAttribute="top" secondItem="I0E-ge-S3w" secondAttribute="bottom" constant="8" id="aIT-jh-Fqn"/>
                             <constraint firstItem="NnX-ae-9kn" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="16" id="kTd-td-qgR"/>
+                            <constraint firstItem="I0E-ge-S3w" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mWM-8c-37M"/>
                             <constraint firstAttribute="trailing" secondItem="NnX-ae-9kn" secondAttribute="trailing" constant="16" id="oRV-7c-7VX"/>
                         </constraints>
                     </view>
@@ -50,4 +59,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="default_marker.png" width="21" height="38"/>
+    </resources>
 </document>

@@ -46,6 +46,8 @@ enum enumAddress {
     
     btnReset.hidden = YES;
     
+    [self showMap_in_View];
+    
     viewAddress.backgroundColor = [UIColor clearColor];
     [self manage_Animation_AddressView_Show:YES];
     
@@ -71,14 +73,12 @@ enum enumAddress {
 #pragma mark - 
 - (void) showMap_in_View
 {
+    //return;
     //GoogleMap Settings
     self.mapContainerView.myLocationEnabled = YES;
+    //self.mapContainerView.settings.myLocationButton = YES;
     self.mapContainerView.settings.allowScrollGesturesDuringRotateOrZoom = YES;
-    self.mapContainerView.settings.myLocationButton = YES;
     self.mapContainerView.settings.compassButton = YES;
-    self.mapContainerView.settings.indoorPicker = NO;
-    self.mapContainerView.settings.scrollGestures = NO;
-    self.mapContainerView.settings.zoomGestures = NO;
     
     //self.mapContainerView.mapType = kGMSTypeNone;
     //self.mapContainerView.mapType = kGMSTypeHybrid;
@@ -86,19 +86,17 @@ enum enumAddress {
     //self.mapContainerView.mapType = kGMSTypeTerrain;
     //self.mapContainerView.mapType = kGMSTypeSatellite;
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:self.mapContainerView.camera.target.latitude
-                                                            longitude:self.mapContainerView.camera.target.latitude
-                                                                 zoom:16];
-    self.mapContainerView.camera = camera;
+    //GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:21.1702 longitude:72.8311 zoom:16];
+    //self.mapContainerView.camera = camera;
     
     /*
-    //Map Pin
-    GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(21.1702, 72.8311);
-    marker.title = @"Current Location";
-    marker.snippet = @"Current Location";
-    marker.map = self.mapContainerView;
-    */
+     //Map Pin
+     GMSMarker *marker = [[GMSMarker alloc] init];
+     marker.position = CLLocationCoordinate2DMake(21.1702, 72.8311);
+     marker.title = @"Current Location";
+     marker.snippet = @"Current Location";
+     marker.map = self.mapContainerView;
+     */
 }
 
 - (void) manage_Animation_AddressView_Show:(BOOL)show
@@ -407,7 +405,7 @@ enum enumAddress {
 - (void) webService_GetGoogleAddress_LatLog:(CLLocationCoordinate2D)locationCoordinate2D
 {
     NSString *strlatLog = [NSString stringWithFormat:@"%@,%@",@(locationCoordinate2D.latitude).stringValue, @(locationCoordinate2D.longitude).stringValue];
-    NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyBta5jqM-1C9iMoDYgtuSFdmYkz-kbdd8M"]; //Live
+    NSString *strKey = [NSString stringWithFormat:@"%@",GoogleAPI_Key]; //Live
     NSString *signUpRequest = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%@&key=%@",strlatLog,strKey];
     NSLog(@"signUpRequest:\n%@",signUpRequest);
     
@@ -457,7 +455,6 @@ enum enumAddress {
                           {
                               Location_To = [[CLLocation alloc] initWithLatitude:locationCoordinate2D.latitude longitude:locationCoordinate2D.longitude];
                           }
-                          
                           strValue =[NSString stringWithFormat:@"%@",strFormatedAddress];
                       }
                       lblAddress.text = [NSString stringWithFormat:@"%@",strValue];
@@ -497,7 +494,7 @@ enum enumAddress {
         
         NSString *strMode = [NSString stringWithFormat:@"%@",@"driving+walking "];
         //NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyCxb-3NivGE0YzosX8IzXR5YBsN_vuicuA"]; //Test
-        NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyDMXbtQzkWvrxbggHRelZQqw3veLY49U18"]; //Live
+        NSString *strKey = [NSString stringWithFormat:@"%@",GoogleAPI_Key]; //Live
         
         NSString *signUpRequest = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=%@&destination=%@&mode=%@&key=%@",strOrigin,strDestination,strMode,strKey];
         NSLog(@"signUpRequest: %@",signUpRequest);

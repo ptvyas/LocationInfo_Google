@@ -9,6 +9,8 @@
 #import "HomeVC.h"
 #import "HomeCell.h"
 
+#import "Constant.h"
+
 #import "ViewController.h"
 #import "MapVC.h"
 #import "RouteLineVC.h"
@@ -18,8 +20,6 @@
 #define Title_GoogleMap                         @"Google Map"
 #define Title_GoogleRouteLine                   @"Google Route line"
 #define Title_GoogleMarkers                     @"Google Markers"
-#define Title_GoogleMarkersInfoWindows          @"Google Markers Info Windows"
-#define Title_GoogleMarkersCustomeInfoWindows   @"Google Markers Custome Info Windows"
 
 @interface HomeVC () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -63,14 +63,6 @@
     
     strTitle = Title_GoogleMarkers;
     strSubTitle = @"By default, markers use a standard icon that has the common Google Maps look and feel. If you want to customize your marker, you can change the color of the default marker, or replace the marker image with a custom icon, or change other properties of the marker.";
-    [self addObjectInTableList_Title:strTitle SubTitle:strSubTitle];
-    
-    strTitle = Title_GoogleMarkersInfoWindows;
-    strSubTitle = @"An InfoWindow displays content (usually text or images) in a popup window above the map, at a given location. The info window has a content area and a tapered markers. The tip of the markers is attached to a specified location on the map.";
-    [self addObjectInTableList_Title:strTitle SubTitle:strSubTitle];
-    
-    strTitle = Title_GoogleMarkersCustomeInfoWindows;
-    strSubTitle = @"Info windows are designed to respond to user touch events. If you prefer, you can show an info window programmatically by calling 'showInfoWindow()' on the target marker. An info window can be hidden by calling 'hideInfoWindow()'";
     [self addObjectInTableList_Title:strTitle SubTitle:strSubTitle];
     
     [tblHome reloadData];
@@ -179,16 +171,8 @@
         [self.navigationController pushViewController:objVC animated:YES];
     }
     else if ([strTitle isEqualToString:[Title_GoogleMarkers uppercaseString]]) {
-        [Function showAlertMessage:Mess_WorkInProgress autoHide:YES];
-    }
-    else if ([strTitle isEqualToString:[Title_GoogleMarkersInfoWindows uppercaseString]]) {
-        [Function showAlertMessage:Mess_WorkInProgress autoHide:YES];
-    }
-    else if ([strTitle isEqualToString:[Title_GoogleMarkersCustomeInfoWindows uppercaseString]]) {
-        [Function showAlertMessage:Mess_WorkInProgress autoHide:YES];
-        
-        //Custom *objVC = loadViewController(@"Main", @"RouteLineVC");
-        //[self.navigationController pushViewController:objVC animated:YES];
+        CustomeMarkersInfoWindowsVC *objVC = loadViewController(@"Main", @"CustomeMarkersInfoWindowsVC");
+        [self.navigationController pushViewController:objVC animated:YES];
     }
     else {
         [Function showAlertMessage:Mess_SomethingWasWrong autoHide:YES];
@@ -206,7 +190,6 @@
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
 }
-
 
 //-------------------------------------------------------------------------------->
 /*

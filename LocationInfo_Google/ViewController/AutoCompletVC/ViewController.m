@@ -112,7 +112,7 @@
     strAddress = place.formattedAddress;
     strAdd_Lat= [NSString stringWithFormat:@"%0.4f",place.coordinate.latitude];
     strAdd_Long = [NSString stringWithFormat:@"%0.4f",place.coordinate.longitude];
-    strAddress = [NSString stringWithFormat:@"Latitude Longitude:\n%@, %@\n\n-- = -- = --\n\nAddress:\n%@",strAdd_Lat,strAdd_Long,strAddress];
+    strAddress = [NSString stringWithFormat:@"Latitude Longitude:\n%@, %@\n\n------\n\nAddress:\n%@",strAdd_Lat,strAdd_Long,strAddress];
     lblAddress.text = strAddress;
     
     [self manage_Animation_AddressView_Show:YES];
