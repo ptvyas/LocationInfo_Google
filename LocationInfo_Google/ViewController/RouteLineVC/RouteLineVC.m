@@ -493,7 +493,8 @@ enum enumAddress {
         strDestination = [NSString stringWithFormat:@"%f,%f",latitude_Destination,longitude_Destination];
         
         NSString *strMode = [NSString stringWithFormat:@"%@",@"driving+walking "];
-        //NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyCxb-3NivGE0YzosX8IzXR5YBsN_vuicuA"]; //Test
+//NSString *strKey = [NSString stringWithFormat:@"%@",@"AIzaSyCxb-3NivGE0YzosX8IzXR5YBsN_vuicuA"]; //Test
+
         NSString *strKey = [NSString stringWithFormat:@"%@",GoogleAPI_Key]; //Live
         
         NSString *signUpRequest = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=%@&destination=%@&mode=%@&key=%@",strOrigin,strDestination,strMode,strKey];
