@@ -533,6 +533,12 @@ enum enumAddress {
                                   {
                                       strValue = [dic valueForKey:@"status"];
                                       //strValue = Mess_GettingAddressError;
+                                      strValue = [strValue uppercaseString];
+                                    if ([strValue isEqualToString:[@"ZERO_RESULTS" uppercaseString]] ||
+                                        [strValue isEqualToString:[@"OK" uppercaseString]])
+                                   {
+                                        strValue = [NSString stringWithFormat:@"Sorry, %@ could not calculate directions\n From:\"%@\" \nTo:\"%@\"",AppName,location_To.snippet,location_From.snippet];
+                                   }
                                   }
                                   [Function showAlertMessage:strValue autoHide:NO];
                               }
